@@ -24,6 +24,7 @@ module.exports = {
 		"@typescript-eslint/no-extra-semi": "off",
 		"@typescript-eslint/member-ordering": "error",
 		"@typescript-eslint/member-delimiter-style": "error",
+		"@typescript-eslint/switch-exhaustiveness-check": "error",
 		"@typescript-eslint/explicit-member-accessibility": [
 			"error",
 			{
@@ -163,6 +164,7 @@ module.exports = {
 		"no-param-reassign": "error",
 		"no-use-before-define": "off",
 		"no-duplicate-case": "error",
+		"no-fallthrough": "error",
 		"curly": "error",
 		"object-shorthand": "error",
 		"prefer-arrow-callback": "error",
