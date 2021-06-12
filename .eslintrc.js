@@ -4,7 +4,8 @@ module.exports = {
 		"plugin:@typescript-eslint/recommended"
 	],
 	plugins: [
-		"@typescript-eslint"
+		"@typescript-eslint",
+		"import"
 	],
 	parserOptions: {
 		"ecmaVersion": 2020,
@@ -12,6 +13,7 @@ module.exports = {
 		"project": "./tsconfig.json"
 	},
 	rules: {
+		"import/no-extraneous-dependencies": ["error", { "devDependencies": false, "optionalDependencies": false, "peerDependencies": false }],
 		"@typescript-eslint/explicit-function-return-type": "off",
 		"@typescript-eslint/interface-name-prefix": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
@@ -160,6 +162,7 @@ module.exports = {
 		"no-extra-semi": "error",
 		"no-param-reassign": "error",
 		"no-use-before-define": "off",
+		"no-duplicate-case": "error",
 		"curly": "error",
 		"object-shorthand": "error",
 		"prefer-arrow-callback": "error",
