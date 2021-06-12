@@ -1,17 +1,17 @@
-{
-	"parser": "@typescript-eslint/parser",
-	"extends": [
+module.exports = {
+	parser: "@typescript-eslint/parser",
+	extends: [
 		"plugin:@typescript-eslint/recommended"
 	],
-	"plugins": [
+	plugins: [
 		"@typescript-eslint"
 	],
-	"parserOptions": {
+	parserOptions: {
 		"ecmaVersion": 2020,
 		"sourceType": "module",
 		"project": "./tsconfig.json"
 	},
-	"rules": {
+	rules: {
 		"@typescript-eslint/explicit-function-return-type": "off",
 		"@typescript-eslint/interface-name-prefix": "off",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
@@ -102,6 +102,16 @@
 				],
 				"prefix": [
 					"E"
+				]
+			},
+			// правило для переменных класса
+			{
+				"selector": "classProperty",
+				"format": [
+					"camelCase"
+				],
+				"prefix": [
+					"_"
 				]
 			}
 		],

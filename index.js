@@ -1,3 +1,3 @@
-var eslintrc = require('./.eslintrc.json');
+var eslintrc = require('./.eslintrc.js');
 
 module.exports = eslintrc;
