@@ -156,6 +156,22 @@ module.exports = {
 			"error",
 			"always"
 		],
+		"import/order": [
+			"error",
+			{
+				"newlines-between": "always-and-inside-groups",
+				"groups": [
+					"index",
+					"sibling",
+					"parent",
+					"internal",
+					"external",
+					"builtin",
+					"object",
+					"type"
+				]
+			}
+		],
 		"no-multi-spaces": "error",
 		"no-shadow": "off",
 		"no-unused-expressions": "error",
@@ -168,6 +184,7 @@ module.exports = {
 		"curly": "error",
 		"object-shorthand": "error",
 		"prefer-arrow-callback": "error",
-		"radix": "error"
+		"radix": "error",
+		"class-methods-use-this": "error"
 	}
 }
