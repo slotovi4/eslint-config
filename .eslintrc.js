@@ -185,6 +185,7 @@ module.exports = {
 		"object-shorthand": "error",
 		"prefer-arrow-callback": "error",
 		"radix": "error",
-		"class-methods-use-this": "error"
+		"class-methods-use-this": "error",
+		"eqeqeq": "error"
 	}
 }
