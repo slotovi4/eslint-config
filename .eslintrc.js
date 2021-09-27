@@ -173,6 +173,10 @@ module.exports = {
 				]
 			}
 		],
+		"indent": [
+			"error",
+			"tab"
+		],
 		"no-multi-spaces": "error",
 		"no-shadow": "off",
 		"no-unused-expressions": "error",
