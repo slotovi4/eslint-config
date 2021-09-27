@@ -25,6 +25,7 @@ module.exports = {
 		"@typescript-eslint/member-ordering": "error",
 		"@typescript-eslint/member-delimiter-style": "error",
 		"@typescript-eslint/switch-exhaustiveness-check": "error",
+		"@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }],
 		"@typescript-eslint/explicit-member-accessibility": [
 			"error",
 			{
