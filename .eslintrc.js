@@ -175,7 +175,10 @@ module.exports = {
 		],
 		"indent": [
 			"error",
-			"tab"
+			"tab",
+			{
+				"SwitchCase": 1
+			}
 		],
 		"no-multi-spaces": "error",
 		"no-shadow": "off",
