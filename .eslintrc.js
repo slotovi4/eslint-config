@@ -3,21 +3,24 @@ module.exports = {
 		"import"
 	],
 	rules: {
-		"no-multi-spaces": "error",
-		"no-shadow": "off",
-		"no-unused-expressions": "error",
-		"no-unused-labels": "error",
-		"no-extra-semi": "error",
-		"no-param-reassign": "error",
+		// off
 		"no-use-before-define": "off",
-		"no-duplicate-case": "error",
-		"no-fallthrough": "error",
-		"curly": "error",
-		"object-shorthand": "error",
-		"prefer-arrow-callback": "error",
-		"radix": "error",
+		"no-shadow": "off",
+
+		// error
 		"class-methods-use-this": "error",
+		"no-unused-expressions": "error",
+		"prefer-arrow-callback": "error",
+		"no-param-reassign": "error",
+		"no-duplicate-case": "error",
+		"no-unused-labels": "error",
+		"object-shorthand": "error",
+		"no-multi-spaces": "error",
+		"no-fallthrough": "error",
+		"no-extra-semi": "error",
 		"eqeqeq": "error",
+		"curly": "error",
+		"radix": "error",
 		"import/no-extraneous-dependencies": [
 			"error",
 			{
@@ -27,7 +30,7 @@ module.exports = {
 			}
 		],
 		"valid-jsdoc": [
-			2,
+			"error",
 			{
 				"requireReturn": false,
 				"requireReturnType": false,
@@ -104,18 +107,26 @@ module.exports = {
 			},
 			files: ["*.ts", "*.tsx"],
 			rules: {
+				// off
+				"@typescript-eslint/explicit-module-boundary-types": "off",
 				"@typescript-eslint/explicit-function-return-type": "off",
 				"@typescript-eslint/interface-name-prefix": "off",
-				"@typescript-eslint/explicit-module-boundary-types": "off",
-				"@typescript-eslint/no-non-null-assertion": "error",
 				"@typescript-eslint/no-use-before-define": "off",
-				"@typescript-eslint/no-shadow": "error",
-				"@typescript-eslint/no-duplicate-imports": "error",
 				"@typescript-eslint/no-extra-semi": "off",
-				"@typescript-eslint/member-ordering": "error",
-				"@typescript-eslint/member-delimiter-style": "error",
+
+				// error
 				"@typescript-eslint/switch-exhaustiveness-check": "error",
-				"@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }],
+				"@typescript-eslint/member-delimiter-style": "error",
+				"@typescript-eslint/no-non-null-assertion": "error",
+				"@typescript-eslint/no-duplicate-imports": "error",
+				"@typescript-eslint/member-ordering": "error",
+				"@typescript-eslint/no-shadow": "error",
+				"@typescript-eslint/consistent-type-imports": [
+					"error",
+					{
+						"prefer": "type-imports"
+					}
+				],
 				"@typescript-eslint/explicit-member-accessibility": [
 					"error",
 					{
