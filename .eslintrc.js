@@ -4,6 +4,7 @@ module.exports = {
 	],
 	rules: {
 		// off
+		"padding-line-between-statements": "off",
 		"no-use-before-define": "off",
 		"no-shadow": "off",
 
@@ -134,6 +135,28 @@ module.exports = {
 							"properties": "off",
 							"parameterProperties": "off"
 						}
+					}
+				],
+				"@typescript-eslint/padding-line-between-statements": [
+					"error",
+					{
+						"blankLine": "always",
+						"prev": "*",
+						"next": [
+							"return",
+							"export",
+							"block-like"
+						]
+					},
+					{
+						"blankLine": "always",
+						"prev": "let",
+						"next": "const"
+					},
+					{
+						"blankLine": "always",
+						"prev": "const",
+						"next": "let"
 					}
 				],
 				"@typescript-eslint/naming-convention": [
