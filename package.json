@@ -1,6 +1,6 @@
 {
 	"name": "@slotovi4/eslint-config",
-	"version": "1.7.8",
+	"version": "1.7.9",
 	"description": "ESlint config",
 	"main": "index.js",
 	"repository": {
