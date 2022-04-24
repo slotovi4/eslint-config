@@ -114,6 +114,7 @@ module.exports = {
 				"@typescript-eslint/interface-name-prefix": "off",
 				"@typescript-eslint/no-use-before-define": "off",
 				"@typescript-eslint/no-extra-semi": "off",
+				"indent": "off",
 
 				// error
 				"@typescript-eslint/switch-exhaustiveness-check": "error",
@@ -122,6 +123,13 @@ module.exports = {
 				"@typescript-eslint/no-duplicate-imports": "error",
 				"@typescript-eslint/member-ordering": "error",
 				"@typescript-eslint/no-shadow": "error",
+				"@typescript-eslint/indent": [
+					"error",
+					"tab",
+					{
+						"SwitchCase": 1
+					}
+				],
 				"@typescript-eslint/consistent-type-imports": [
 					"error",
 					{
