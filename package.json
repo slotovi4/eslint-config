@@ -1,11 +1,14 @@
 {
 	"name": "@slotovi4/eslint-config",
-	"version": "1.8.10",
+	"version": "1.8.11",
 	"description": "ESlint config",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/slotovi4/eslint-config.git"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
 	},
 	"keywords": [
 		"eslint",
