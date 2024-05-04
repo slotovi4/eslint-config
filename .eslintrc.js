@@ -1,6 +1,7 @@
 module.exports = {
 	plugins: [
-		"import"
+		"import",
+		"jsdoc"
 	],
 	rules: {
 		// off
@@ -30,15 +31,10 @@ module.exports = {
 				"peerDependencies": false
 			}
 		],
-		"valid-jsdoc": [
-			"error",
-			{
-				"requireReturn": false,
-				"requireReturnType": false,
-				"requireParamType": false,
-				"requireParamDescription": true
-			}
-		],
+		"jsdoc/require-param-type": 0,
+		"jsdoc/require-param-description": 1,
+		"jsdoc/require-returns-type": 0,
+		"jsdoc/require-returns": 0,
 		"prefer-destructuring": [
 			"error",
 			{
